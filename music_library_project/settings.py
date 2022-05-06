@@ -43,6 +43,10 @@ INSTALLED_APPS = [
 
 CORS_ORIGIN_ALLOW_ALL=True
 
+REST_FRAMEWORK = {
+    "COERCE_DECIMAL-TO_STRING": False
+}
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
